@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { StockInventoryModule } from './stock-inventory/containers/stock-inventory.module';
+import { StockInventoryModule } from './stock-inventory/stock-inventory.module';
 
 import { AppComponent } from './app.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    StockInventoryModule
+    StockInventoryModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
